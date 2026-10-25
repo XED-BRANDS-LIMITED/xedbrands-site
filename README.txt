@@ -36,3 +36,11 @@ DOMAIN AND EMAIL SAFETY
 CONTACT DETAILS
 The website pages should be checked before publishing to ensure contact details,
 brand descriptions, and location wording are accurate.
+
+
+UPDATED PACKAGE NOTES
+- This package preserves the existing XED Brands black, red and gold premium design.
+- The XED logo image has been tightly cropped and cleaned for use on the dark website background.
+- Logo sizing has been adjusted for desktop, tablet and mobile layouts.
+- To update the live GitHub Pages site, extract this ZIP and upload/replace the included website files in the existing xedbrands-site repository, keeping the folder structure. Commit to the main branch.
+- Keep the CNAME file in the repository root. Do not upload the backup-single-page folder over the root site; it is only a backup.
