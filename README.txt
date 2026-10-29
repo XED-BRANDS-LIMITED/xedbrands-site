@@ -1,47 +1,46 @@
-XED BRANDS WEBSITE UPDATE PACKAGE
-=================================
-This package has NOT been published. The live site is unchanged until you upload it.
+XED BRANDS — FINAL MERGED GITHUB PAGES PACKAGE
 
-CONTENTS
-  index.html            page structure (permanent sections + marked seasonal blocks)
-  css/main.css          permanent identity (black/red/gold), gallery, layout
-  css/seasonal.css      TEMPORARY Christmas/New Year styling
-  js/main.js            menu, slideshow (auto + previous/next + dots)
-  js/seasonal.js        TEMPORARY snow, gold sparkle, twinkling lights
-  assets/               your four supplied images, unedited
+LIVE WEBSITE FILES
+- index.html
+- about.html
+- brands.html
+- coming-soon.html
+- updates.html
+- contact.html
+- assets/ (logo, stylesheet, JavaScript, design reference)
+- CNAME (xedbrands.com)
 
-SAFE UPLOAD STEPS
-  1. BACKUP FIRST: in your GitHub repo, make sure the current site is committed.
-     Optionally download it (Code > Download ZIP) or create a branch named
-     "website-backup". Commit message suggestion: "Website foundation backup".
-  2. Best practice: create a new branch (e.g. "christmas-2026"), upload these files
-     there (Add file > Upload files; drag in the folders), and commit:
-     "Add Christmas and New Year campaign".
-  3. If the new files replace an existing index.html, GitHub keeps the old one in
-     commit history. Do not delete other files in your repo (e.g. CNAME) - your
-     custom domain depends on the CNAME file.
-  4. Check the result, then merge the branch (or commit to main) to publish.
+The multi-page website is kept at the repository root so GitHub Pages can publish it.
+The original uploaded one-page version is preserved in backup-single-page/ and is NOT
+the live homepage. Do not move its index.html to the repository root unless you want
+to replace the multi-page website with the one-page alternative.
 
-RECOVERING AN EARLIER VERSION
-  Repo > Commits > open an older commit > browse files, or use "Revert" on the
-  commit to undo it. Nothing is lost once committed.
+PUBLISH TO THE EXISTING GITHUB REPOSITORY
+1. Unzip this package on your computer.
+2. Open your existing xedbrands-site repository on GitHub.
+3. Upload the live website files and folders from the extracted package to the
+   repository root (not the ZIP itself). Include the assets folder and CNAME.
+4. If GitHub asks how to handle the existing index.html, choose to replace it with
+   the multi-page website's index.html. Keep the repository's CNAME value as
+   xedbrands.com.
+5. Commit the changes to the main branch.
+6. In Settings > Pages, confirm publishing from main and /(root).
 
-ENDING THE SEASONAL CAMPAIGN
-  Quick off switch: delete  data-season="christmas"  from the <body> tag.
-  Full removal: also delete css/seasonal.css, js/seasonal.js, the two lines in
-  index.html marked "SEASONAL LAYER", and any element with data-seasonal.
-  Commit: "Remove seasonal decorations after the holidays".
+DOMAIN AND EMAIL SAFETY
+- CNAME contains xedbrands.com.
+- Do not change Namecheap DNS or delete existing MX/TXT records for email just
+  because you are publishing the site.
+- If the domain is already configured and the site works, do not redo DNS settings.
+- Enable Enforce HTTPS in GitHub Pages when the option is available.
 
-ADDING A PRODUCT IMAGE LATER
-  Put the image in assets/, then copy one <figure class="slide"> and one
-  <figure class="gallery-card"> in index.html (see the comment there).
-  Commit: "Add product gallery images".
+CONTACT DETAILS
+The website pages should be checked before publishing to ensure contact details,
+brand descriptions, and location wording are accurate.
 
-PRIVACY NOTES
-  Image filenames, alt text and captions are generic. Images are unedited, exactly
-  as supplied. Please re-check each image for any wording you do not want public.
-  Contact details are exactly as approved; no direct-call number is published.
 
-NOT TESTED
-  Not tested on a real GitHub Pages deployment or on physical phones. Open
-  index.html locally in your browser to preview before uploading.
+UPDATED PACKAGE NOTES
+- This package preserves the existing XED Brands black, red and gold premium design.
+- The XED logo image has been tightly cropped and cleaned for use on the dark website background.
+- Logo sizing has been adjusted for desktop, tablet and mobile layouts.
+- To update the live GitHub Pages site, extract this ZIP and upload/replace the included website files in the existing xedbrands-site repository, keeping the folder structure. Commit to the main branch.
+- Keep the CNAME file in the repository root. Do not upload the backup-single-page folder over the root site; it is only a backup.
