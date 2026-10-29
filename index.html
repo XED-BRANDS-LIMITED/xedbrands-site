@@ -1,37 +1,121 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080808"><meta name="description" content="XED Brands — One House. Many Brands. A multi-brand vision built around thoughtful growth, quality, and long-term value."><title>Home | XED Brands</title><link rel="icon" href="assets/xed-logo.png"><link rel="stylesheet" href="assets/style.css"></head><body>
-<div class="season-strip"><span class="sparkle">✦</span> SEASON'S GREETINGS <span class="season-dot">•</span> Wishing you a bright Christmas and a prosperous New Year <span class="sparkle">✦</span></div>
-<header class="site-header"><a class="brand-logo" href="index.html"><img src="assets/xed-logo.png" alt="XED Brands"><span>BRANDS</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="brands.html">Our Brands</a><a href="coming-soon.html">Coming Soon</a><a href="updates.html">Updates</a><a href="contact.html">Contact Us</a><a class="nav-cta" href="contact.html">Get In Touch <span>→</span></a></nav></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XED Brands | One House. Many Brands.</title>
+<meta name="description" content="XED Brands is a growing parent brand developing a portfolio of businesses and products. One House. Many Brands.">
+<link rel="stylesheet" href="css/main.css">
+<!-- SEASONAL LAYER: delete the next line when the campaign ends -->
+<link rel="stylesheet" href="css/seasonal.css">
+</head>
+<!-- SEASONAL LAYER: remove the data-season attribute to switch the campaign off -->
+<body data-season="christmas">
+<a class="skip" href="#home">Skip to content</a>
+
+<header class="site-header">
+  <a class="logo" href="#home"><span class="x">XED</span> BRANDS</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">&#9776;</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#brands">Our Brands</a>
+    <a href="#approach">Our Approach</a>
+    <a href="#greetings" data-seasonal>Season's Greetings</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 <main>
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">INNOVATION <i>•</i> QUALITY <i>•</i> SUSTAINABLE GROWTH</p>
-    <h1>One House.<br><span>Many Brands.</span></h1>
-    <p class="lead">XED Brands is building distinctive brands and experiences designed to create value today and shape a better tomorrow.</p>
-    <a class="btn" href="brands.html">Discover Our Brands <span>↗</span></a>
+<!-- ========== LAYER A: PERMANENT FOUNDATION ========== -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <!-- LAYER C: seasonal greeting (hidden unless body[data-season]) -->
+    <div class="season-hero" data-seasonal>
+      <p class="season-kicker">&#9733; Season's Greetings &#9733;</p>
+      <h2 class="season-title">MERRY CHRISTMAS<br><span>&amp; HAPPY NEW YEAR!</span></h2>
+      <p class="season-msg">Warm wishes from everyone at XED Brands. May this festive season bring peace, joy, renewed hope and fresh opportunities for the year ahead.</p>
+    </div>
+    <h1 class="brand-title"><span class="x">XED</span> BRANDS</h1>
+    <p class="tagline">ONE HOUSE. MANY BRANDS.</p>
+    <p class="lead">A growing parent brand building a portfolio of businesses and products, with a focus on quality, innovation and long-term value.</p>
+    <div class="cta">
+      <a class="btn" href="#brands">View Our Brands</a>
+      <a class="btn btn-ghost" href="#contact">Contact Us</a>
+    </div>
   </div>
-  <div class="hero-visual" role="img" aria-label="Modern city skyline at sunset"></div>
+  <div class="glow" aria-hidden="true"></div>
 </section>
-<section class="portfolio section" id="portfolio">
-  <div class="section-intro"><p class="eyebrow">OUR BRAND PORTFOLIO</p><h2>Diverse Industries.<br>Shared Vision.</h2><p>Different opportunities. One commitment to thoughtful growth, quality, and lasting value.</p><a class="text-link" href="brands.html">View all business areas ↗</a></div>
-  <div class="brand-grid">
-    <a class="brand-card" href="brands.html#agriculture"><div class="card-image agriculture"></div><span class="mini-icon">✳</span><h3>Agriculture &<br>Agro-Allied</h3><small>In development</small></a>
-    <a class="brand-card" href="brands.html#food"><div class="card-image food"></div><span class="mini-icon">✦</span><h3>Food &<br>Beverage</h3><small>In development</small></a>
-    <a class="brand-card" href="brands.html#technology"><div class="card-image tech"></div><span class="mini-icon">⌘</span><h3>Technology &<br>Digital Solutions</h3><small>In development</small></a>
-    <a class="brand-card" href="brands.html#lifestyle"><div class="card-image lifestyle"></div><span class="mini-icon">◇</span><h3>Lifestyle &<br>Consumer Goods</h3><small>In development</small></a>
-    <a class="brand-card" href="brands.html#media"><div class="card-image media"></div><span class="mini-icon">▷</span><h3>Media &<br>Entertainment</h3><small>In development</small></a>
+
+<section id="about" class="section">
+  <h2 class="section-title">About XED Brands</h2>
+  <p class="section-text">XED Brands is a growing parent brand with a vision to develop a portfolio of businesses and products. We focus on quality, innovation, thoughtful execution and long-term value.</p>
+</section>
+
+<!-- ========== LAYER B: EXPANDABLE FEATURES ========== -->
+<section id="brands" class="section dark">
+  <h2 class="section-title">Our Brands</h2>
+  <p class="section-text">A glimpse of what is on the way. Each brand is coming soon.</p>
+
+  <div class="slideshow" id="slideshow" role="region" aria-roledescription="carousel" aria-label="Product gallery">
+    <div class="slides">
+      <figure class="slide active"><img src="assets/farm-produce-coming-soon.png" alt="XED Brands Farm Produce promotional image. Coming soon." width="1403" height="1121"><figcaption>Agriculture and Produce &mdash; Coming Soon</figcaption></figure>
+      <figure class="slide"><img src="assets/beverage-coming-soon.png" alt="XED Brands beverage promotional image. Coming soon." width="1403" height="1121" loading="lazy"><figcaption>Food and Beverages &mdash; Coming Soon</figcaption></figure>
+      <figure class="slide"><img src="assets/snack-coming-soon.png" alt="Snack product promotional pack image. Coming soon." width="1121" height="1403" loading="lazy"><figcaption>Consumer Goods &mdash; Coming Soon</figcaption></figure>
+      <figure class="slide"><img src="assets/spice-coming-soon.png" alt="XED Brands pouch product promotional image. Coming soon." width="1402" height="1122" loading="lazy"><figcaption>Innovation and Ventures &mdash; Coming Soon</figcaption></figure>
+    </div>
+    <button class="ctrl prev" aria-label="Previous image">&#10094;</button>
+    <button class="ctrl next" aria-label="Next image">&#10095;</button>
+    <div class="dots" role="tablist" aria-label="Choose image"></div>
+  </div>
+
+  <!-- To add a product: copy one <figure class="gallery-card"> below and one <figure class="slide"> above -->
+  <div class="gallery">
+    <figure class="gallery-card"><img src="assets/farm-produce-coming-soon.png" alt="XED Brands Farm Produce promotional image" loading="lazy"><figcaption>Agriculture and Produce &mdash; Coming Soon</figcaption></figure>
+    <figure class="gallery-card"><img src="assets/beverage-coming-soon.png" alt="XED Brands beverage promotional image" loading="lazy"><figcaption>Food and Beverages &mdash; Coming Soon</figcaption></figure>
+    <figure class="gallery-card"><img src="assets/snack-coming-soon.png" alt="Snack product promotional pack image" loading="lazy"><figcaption>Consumer Goods &mdash; Coming Soon</figcaption></figure>
+    <figure class="gallery-card"><img src="assets/spice-coming-soon.png" alt="XED Brands pouch product promotional image" loading="lazy"><figcaption>Innovation and Ventures &mdash; Coming Soon</figcaption></figure>
   </div>
 </section>
-<section class="about-preview section">
-  <div class="about-photo"></div><div class="about-copy"><p class="eyebrow">ABOUT XED BRANDS</p><h2>Building Brands for a Greater Tomorrow.</h2><p>We bring ideas, people, and resources together to develop distinctive brands with a clear purpose and a long-term perspective.</p><a class="btn btn-outline" href="about.html">Discover Our Vision <span>↗</span></a></div>
-  <div class="values">
-    <div><b class="value-icon">◎</b><div><h3>Our Vision</h3><p>To build a portfolio of brands recognised for quality, innovation, and meaningful impact.</p></div></div>
-    <div><b class="value-icon">✧</b><div><h3>Our Mission</h3><p>To develop ideas into thoughtful brands that respond to real needs and create lasting value.</p></div></div>
-    <div><b class="value-icon">☆</b><div><h3>Our Values</h3><p>Integrity · Excellence · Innovation · Customer Focus · Sustainability</p></div></div>
+
+<section id="approach" class="section">
+  <h2 class="section-title">Our Approach</h2>
+  <ul class="values">
+    <li><strong>Quality</strong>Careful standards in everything we do.</li>
+    <li><strong>Innovation</strong>Fresh thinking for new ventures.</li>
+    <li><strong>Long-Term Value</strong>Building for years, not moments.</li>
+    <li><strong>Thoughtful Growth</strong>Considered, responsible business development.</li>
+    <li><strong>International Outlook</strong>Forward-looking, with offices in two countries.</li>
+  </ul>
+</section>
+
+<!-- ========== LAYER C: SEASONAL SECTION (remove whole block after the holidays) ========== -->
+<section id="greetings" class="section greetings" data-seasonal>
+  <h2 class="section-title">Season's Greetings</h2>
+  <p class="section-text">To our community, partners and future customers: thank you for being part of the XED Brands journey. We wish you a joyful Christmas and a peaceful, prosperous season.</p>
+  <p class="newyear">Welcome to 2027. Celebrating the season. Looking forward to new beginnings.</p>
+</section>
+
+<section id="contact" class="section dark">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-grid">
+    <div><h3>General Enquiries</h3><p><a href="mailto:info@xedbrands.com">info@xedbrands.com</a></p></div>
+    <div><h3>WhatsApp</h3><p><a href="https://wa.me/2348036400783">+234 803 640 0783</a><br><small>WhatsApp messages only &mdash; no direct calls.</small></p></div>
+    <div><h3>International Office</h3><p>7101 Chase Oaks Blvd<br>Plano, Texas 75025<br>United States</p></div>
+    <div><h3>Local Office</h3><p>Ikeja, Lagos<br>Nigeria</p></div>
   </div>
 </section>
-<section class="approach section"><div><p class="eyebrow">OUR APPROACH</p><h2>Ideas. Strategy. Execution.</h2><p>We believe strong brands are built with purpose, thoughtful planning, quality, and a commitment to continuous improvement.</p></div><div class="approach-points"><div><span>✧</span><h3>Innovation</h3><p>Look for better ways to create value.</p></div><div><span>◇</span><h3>Quality</h3><p>Build trust through high standards.</p></div><div><span>♧</span><h3>People</h3><p>Respect the people behind every idea.</p></div><div><span>↗</span><h3>Growth</h3><p>Build with tomorrow in mind.</p></div></div></section>
-<section class="future"><p class="eyebrow">THE FUTURE IS BRIGHT</p><h2>More Brands <span>|</span> More Opportunities</h2><p>New ideas are taking shape. Follow our journey as XED Brands continues to grow.</p><a class="btn" href="updates.html">Stay Updated <span>↗</span></a><div class="ribbon"></div></section>
 </main>
-<footer class="footer"><div class="footer-brand"><a class="brand-logo" href="index.html"><img src="assets/xed-logo.png" alt="XED Brands"><span>BRANDS</span></a><p>One House. Many Brands.</p></div><div><h4>CONTACT US</h4><a href="mailto:info@xedbrands.com">✉ &nbsp; info@xedbrands.com</a><a href="https://wa.me/2348036400783" target="_blank" rel="noopener">◉ &nbsp; 08036400783 (WhatsApp only)</a><p>⌖ &nbsp; Plano, Texas, United States</p><p>⌖ &nbsp; Ikeja, Lagos, Nigeria</p></div><div><h4>EXPLORE</h4><a href="about.html">About Us</a><a href="brands.html">Our Brands</a><a href="coming-soon.html">Coming Soon</a><a href="updates.html">Updates</a></div><div><h4>THE NEXT CHAPTER</h4><p>New ideas. More possibilities.</p><a class="footer-cta" href="contact.html">Start a conversation ↗</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> XED Brands. All rights reserved.</span><span>One House. Many Brands.</span></div></footer><script src="assets/site.js"></script>
-</body></html>
+
+<footer class="site-footer">
+  <p class="logo"><span class="x">XED</span> BRANDS</p>
+  <p class="tagline">ONE HOUSE. MANY BRANDS.</p>
+  <nav aria-label="Footer"><a href="#home">Home</a><a href="#about">About</a><a href="#brands">Our Brands</a><a href="#approach">Our Approach</a><a href="#contact">Contact</a></nav>
+  <p class="copy">&copy; <span id="year">2026</span> XED Brands. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- SEASONAL LAYER: delete the next line when the campaign ends -->
+<script src="js/seasonal.js"></script>
+</body>
+</html>

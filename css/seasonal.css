@@ -1,0 +1,20 @@
+/* LAYER C - TEMPORARY CHRISTMAS / NEW YEAR CAMPAIGN
+   Remove: delete this file, js/seasonal.js, their two tags in index.html,
+   and the data-season attribute on <body>. Nothing else depends on it. */
+body[data-season] .season-hero{margin-bottom:34px}
+.season-kicker{color:var(--gold);font-size:.9rem;letter-spacing:.3em;text-transform:uppercase;margin:0}
+.season-title{font-size:clamp(2rem,7vw,4.2rem);color:var(--cream);margin:.2em 0;line-height:1.1;text-shadow:0 0 22px rgba(232,184,48,.6);animation:rise 1.2s ease both}
+.season-title span{color:var(--gold)}
+.season-msg{max-width:640px;margin:0 auto;font-style:italic;font-size:1.1rem;animation:rise 1.6s ease both}
+body[data-season] .hero{border-bottom:4px double var(--gold2)}
+body[data-season] .site-header{border-image:repeating-linear-gradient(90deg,var(--red) 0 20px,var(--gold) 20px 40px,#1d6b34 40px 60px) 1;border-bottom-width:3px}
+.greetings{background:linear-gradient(#0b1a10,#070707);max-width:none!important;border-block:1px solid #1d6b34}
+.greetings .section-title{color:var(--cream)}
+.newyear{color:var(--gold);font-size:1.3rem;font-style:italic}
+#season-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.lights{position:absolute;top:0;left:0;right:0;height:14px;z-index:1;display:flex;justify-content:space-around;pointer-events:none}
+.lights i{width:9px;height:9px;border-radius:50%;margin-top:4px;animation:twinkle 2.4s ease-in-out infinite}
+.lights i:nth-child(3n){background:var(--red);box-shadow:0 0 10px var(--red)}
+.lights i:nth-child(3n+1){background:var(--gold);box-shadow:0 0 10px var(--gold);animation-delay:.6s}
+.lights i:nth-child(3n+2){background:#2fa34f;box-shadow:0 0 10px #2fa34f;animation-delay:1.2s}
+@keyframes twinkle{50%{opacity:.25}}
