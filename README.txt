@@ -44,3 +44,14 @@ UPDATED PACKAGE NOTES
 - Logo sizing has been adjusted for desktop, tablet and mobile layouts.
 - To update the live GitHub Pages site, extract this ZIP and upload/replace the included website files in the existing xedbrands-site repository, keeping the folder structure. Commit to the main branch.
 - Keep the CNAME file in the repository root. Do not upload the backup-single-page folder over the root site; it is only a backup.
+
+
+MERGED UPDATE — OCTOBER 2026
+- Keeps the premium multi-page website and cropped XED Brands logo as the live-site foundation.
+- Adds the four concept images from the earlier website package (farm produce, snacks, spices, and beverages) to assets/.
+- Adds a responsive product-concepts section to coming-soon.html.
+- Adds local CSS for the new cards; existing page navigation and CNAME are preserved.
+- The product images are concept visuals, not confirmation that products are available or launched.
+
+PUBLISHING
+Upload the contents of this ZIP to the root of your existing GitHub Pages repository, preserving the assets/ folder and replacing the matching website files. Keep CNAME at the repository root. Do not upload the ZIP file itself. Preview coming-soon.html after upload.
