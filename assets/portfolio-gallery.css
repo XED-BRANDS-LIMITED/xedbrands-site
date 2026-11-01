@@ -1,0 +1,18 @@
+
+/* Combined product gallery — isolated class names to preserve the premium site theme */
+.xed-slideshow{position:relative;max-width:900px;margin:30px auto 42px;border:1px solid var(--gold);background:#050505;overflow:hidden}
+.xed-slides{position:relative;aspect-ratio:5/4}
+.xed-slide{position:absolute;inset:0;margin:0;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .65s ease}
+.xed-slide.active{opacity:1;visibility:visible}
+.xed-slide img{width:100%;height:100%;min-height:0;flex:1;object-fit:contain;background:#050505}
+.xed-slide figcaption,.xed-gallery figcaption{padding:12px;background:#090909;color:var(--gold);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;text-align:center}
+.xed-ctrl{position:absolute;top:45%;z-index:3;width:42px;height:42px;border:1px solid var(--gold);background:rgba(0,0,0,.75);color:var(--gold);cursor:pointer;font-size:1.1rem}
+.xed-ctrl:hover{background:var(--red);color:#fff}.xed-prev{left:12px}.xed-next{right:12px}
+.xed-dots{display:flex;justify-content:center;gap:10px;padding:12px;background:#080808}
+.xed-dots button{width:11px;height:11px;padding:0;border:1px solid var(--gold);border-radius:50%;background:transparent;cursor:pointer}
+.xed-dots button.active{background:var(--gold)}
+.xed-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:1000px;margin:36px auto}
+.xed-gallery figure{margin:0;border:1px solid rgba(217,174,84,.45);background:#090909;overflow:hidden}
+.xed-gallery img{display:block;width:100%;height:auto}
+@media(max-width:650px){.xed-slides{aspect-ratio:4/5}.xed-gallery{grid-template-columns:1fr;gap:16px}.xed-ctrl{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){.xed-slide{transition:none}}
