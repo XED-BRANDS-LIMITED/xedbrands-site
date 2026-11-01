@@ -30,11 +30,6 @@ IMPORTANT
 - Do not change Namecheap DNS or remove email MX/TXT records if the domain and
   email are already working.
 - Check all public contact details and location wording before publishing.
-- The seasonal greeting strip in the premium site remains as supplied in the
-  original premium update. The separate Christmas effects from the second
-  package were not duplicated because the premium site already has its own
-  seasonal presentation.
-
-
-CHRISTMAS SEASON EDITION
-This package includes a premium Christmas-season visual refresh across all pages: evergreen and champagne accents, a Season’s Greetings feature on the homepage, subtle snowfall, winter sparkle details, and responsive styling. Existing pages, navigation, brand content, gallery assets, and domain configuration are retained.
+- This Christmas Visual Update adds a prominent festive greeting banner and visible
+  animated snowfall to all six pages. Existing product advertisements and images
+  remain unchanged. See CHRISTMAS-VISUAL-UPDATE.txt for details.

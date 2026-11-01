@@ -1,0 +1,37 @@
+XED BRANDS — CHRISTMAS VISUAL UPDATE
+===================================
+
+This update keeps the existing multi-page XED Brands website and its core
+features, page structure, wording, logo, black/red/gold brand colours, and
+product advertisements intact. It adds a much more visible Christmas-season
+presentation across all six pages.
+
+WHAT CHANGED
+- A prominent Christmas greeting banner appears below the navigation on every page.
+- The banner features a festive winter/Christmas photograph, large “Merry Christmas”
+  lettering, and a Season's Greetings message.
+- Animated snowfall is visible across the site while visitors browse.
+- The existing season strip receives a brighter festive finish while retaining
+  the site's black, red, and gold identity.
+- Snowfall is decorative and does not intercept clicks or navigation.
+- Reduced-motion settings are respected; visitors who request reduced motion
+  will not see the animated snowfall.
+
+WHAT WAS NOT CHANGED
+- Existing page names, page content, navigation, and core website features.
+- XED Brands logo and original brand colour palette.
+- Existing building, portfolio, and other site photographs.
+- The four Coming Soon product images: farm produce, beverages, snacks, and spices.
+- Product slideshow, product gallery, and their image files.
+- CNAME / xedbrands.com configuration.
+
+PUBLISHING
+1. Keep a copy of your current GitHub repository as a backup.
+2. Extract this ZIP file.
+3. Upload the CONTENTS to the root of your existing GitHub Pages repository,
+   keeping the assets folder and all six HTML pages in their current locations.
+4. Replace the matching files and folders, then commit to the main branch.
+5. Preview all six pages on desktop and mobile.
+
+Do not upload the ZIP file itself. Keep CNAME at the repository root and do not
+change working domain DNS or email records as part of this visual update.
