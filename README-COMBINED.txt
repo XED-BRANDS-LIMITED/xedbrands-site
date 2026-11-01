@@ -34,3 +34,7 @@ IMPORTANT
   original premium update. The separate Christmas effects from the second
   package were not duplicated because the premium site already has its own
   seasonal presentation.
+
+
+CHRISTMAS SEASON EDITION
+This package includes a premium Christmas-season visual refresh across all pages: evergreen and champagne accents, a Season’s Greetings feature on the homepage, subtle snowfall, winter sparkle details, and responsive styling. Existing pages, navigation, brand content, gallery assets, and domain configuration are retained.
